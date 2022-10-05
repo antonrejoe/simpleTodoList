@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap");
 :root {
   --default-margin:2px ;
 }
@@ -24,8 +25,8 @@ body > h1::after {
   content: "​";
   position: relative;
   display: inline-block;
-  padding-right: 0.1ch;
-  border-right: 1ch solid currentColor;
+  padding-right: 5px;
+  border-right: 7px solid currentColor;
   white-space: nowrap;
   -webkit-animation: typed-0-caret 0.75s linear 1s infinite forwards;
           animation: typed-0-caret 0.75s linear 1s infinite forwards;
@@ -676,7 +677,7 @@ body > h1::after {
 }
 
 * {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Noto Sans Mono", monospace;
 }
 
 input {
@@ -725,6 +726,7 @@ input[type=button]:active {
 }
 input[type=button]:hover {
   scale: 1.07;
+  cursor: pointer;
 }
 
 #enter_symbol > line {
@@ -739,8 +741,13 @@ input[type=button]:hover {
   display: inline-block;
 }
 
+dd:hover {
+  cursor: pointer;
+}
+
 dd {
   padding: 2vmin 12vmin;
+  width: 25vmin;
   margin: 0.5vmin 2vmin;
   text-align: center;
 }
@@ -773,6 +780,12 @@ dl {
   text-align: center;
   align-items: center;
   transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+dd:hover {
+  background: rgba(245, 222, 179, 0.199);
+  color: wheat;
+  font-size: 1.2rem;
 }
 
 @-webkit-keyframes slide-down {

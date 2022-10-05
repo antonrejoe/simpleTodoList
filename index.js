@@ -10,6 +10,7 @@ let stylesheets = document.styleSheets;
 console.log(stylesheets);
 
 
+let clickTimes = 0;
 
 saveBtn.addEventListener('click', function () {
     let input_text =  input_box.value;    
@@ -27,19 +28,46 @@ saveBtn.addEventListener('click', function () {
         dl.appendChild(docFragment);
         
         input_box.value = '';
-        
+
         let z =0;
         dd.addEventListener('click',function () {
+            
+                
+           
             if (z == 0) {
                 this.style.textDecoration = "line-through";
-                this.style.textDecorationColor= 'red';
+                this.style.textDecorationColor= 'wheat';
                 this.style.backgroundColor = "rgba(0, 0, 0, 0.37)";
                 this.style.color = 'white'
                 let docFragment = document.createDocumentFragment();
                 docFragment.appendChild(this)
                 this.classList.toggle('dd_anim') 
                 dl.appendChild(docFragment);
+                
+                
 
+                let burst = new mojs.Burst({
+                    radius:{0:800},
+                    degree:{0:180},
+                    count:20,
+                    top: 0 ,
+                    left: 0,
+                    children:{
+                    fill: {'white' : 'wheat'}
+                    }
+                });
+                let burst_2 = new mojs.Burst({
+                    radius:{0:700},
+                    degree:{180:270},
+                    count:20,
+                    top: 0,
+                    left: '100%',
+                    children:{
+                    fill: {'white' : 'wheat'}
+                    }
+                });
+                burst_2.play();
+                burst.play();
                 return z+=1  
             }
             
@@ -55,8 +83,9 @@ saveBtn.addEventListener('click', function () {
                 dl.appendChild(docFragment)
                 return z-=1   
             }
+             
         }
-        
+           
         )
 
 
@@ -77,10 +106,10 @@ document.documentElement.addEventListener('keypress', e =>{
     if (keyPressed =='Enter') {
         saveBtn.click()
     }
+
+    
+   
 })
 
 
 
-    
-    
-   

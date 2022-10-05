@@ -1,5 +1,6 @@
 
 @import './typed.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
 
 :root{
 
@@ -15,7 +16,15 @@ body{
 }
 
 body >h1{
-    @include typed("To do list " ,"For a Productive Day" );
+    @include typed(
+        "To do list " ,
+        "For a Productive Day",
+        1,
+        (caret-width:7px , 
+        caret-space:5px , 
+        ) 
+        
+        );
 
 }
 
@@ -32,7 +41,7 @@ body >h1{
 }
 
 *{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Noto Sans Mono', monospace;
     
 }
 
@@ -89,6 +98,7 @@ input[type=button]:active{
 
 input[type=button]:hover{
     scale: 1.07;
+    cursor: pointer;
 }
 
 
@@ -109,9 +119,13 @@ input[type=button]:hover{
 
 }
 
+dd:hover{
+    cursor: pointer;
+}
 
 dd{
     padding: 2vmin 12vmin;
+    width: 25vmin;
     margin: 0.5vmin 2vmin;
     text-align: center;
 }
@@ -151,6 +165,11 @@ dl{
 
 }
 
+dd:hover{
+    background: rgba(245, 222, 179, 0.199);
+    color: wheat;
+    font-size: 1.2rem;
+}
 
 @keyframes slide-down {
     
