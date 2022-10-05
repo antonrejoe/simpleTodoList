@@ -1,0 +1,180 @@
+
+@import './typed.scss';
+
+:root{
+
+    --default-margin:2px
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    text-align: center;
+    overflow-x: hidden
+}
+
+body >h1{
+    @include typed("To do list " ,"For a Productive Day" );
+
+}
+
+.input-span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-span > input{
+
+    margin: 4vmin;
+   
+}
+
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+input{
+    border-radius: 0.2rem;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+input[type=text]{
+    padding: 2vmin 7vmin 2vmin 1.8vmin ;
+    border: 1px solid rgba(0, 0, 0, 0.077);
+    background-color: wheat;
+    outline: none;
+
+}
+
+input[type=text]:active{
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.63);
+
+}
+input[input=text]:focus-visible{
+    outline: none;
+    border: none;
+    background-color: rgba(51, 51, 51, 0.39);
+}
+input[type=button]{
+    background-color: transparent;
+    padding: 2vmin 3vmin;
+
+}
+
+input[type=button]:active{
+    background-color: rgba(157, 157, 157, 0.133);
+}
+
+
+@media (prefers-color-scheme:dark) {
+    body{
+        background-color: #333;
+        color: wheat;
+    }
+    
+    input[type=button]{
+        color: wheat;
+        border: wheat 2px solid;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+    }
+}
+
+input[type=button]:hover{
+    scale: 1.07;
+}
+
+
+
+#enter_symbol > line{
+    stroke: wheat;
+}
+
+#enter_symbol > path{
+    fill: wheat;
+
+}
+
+
+#enter_symbol{
+    display: inline-block;
+
+
+}
+
+
+dd{
+    padding: 2vmin 12vmin;
+    margin: 0.5vmin 2vmin;
+    text-align: center;
+}
+
+.btn-span > input,svg{
+    display: block;
+    
+}
+
+
+
+.btn-span{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+
+dd{
+    width: 30vmin;
+    background-color: wheat;
+    color: #333;
+    border-radius: 0.2rem;
+    animation: slide-down 1s ease ;
+    transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+dl{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+
+@keyframes slide-down {
+    
+    0%{
+       translate: 0;
+    }
+    50%{
+        translate: 0 20%;
+    }
+
+    100%{
+        translate: 0;
+    }
+}
+.dd_anim{
+    animation: slide-down 1s ease ;
+    transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+footer{
+    position: relative;
+    padding-bottom: 2rem;
+    display: block;
+    width: 100vw;
+    text-align: center;
+}

@@ -1,0 +1,813 @@
+@charset "UTF-8";
+:root {
+  --default-margin:2px ;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+body > h1::before {
+  content: "​";
+  content: "​"/"To do list ";
+  alt: "To do list ";
+  white-space: break-spaces;
+  will-change: content;
+  -webkit-animation: typed-0 11.58s linear 1s infinite forwards;
+          animation: typed-0 11.58s linear 1s infinite forwards;
+}
+body > h1::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 0.1ch;
+  border-right: 1ch solid currentColor;
+  white-space: nowrap;
+  -webkit-animation: typed-0-caret 0.75s linear 1s infinite forwards;
+          animation: typed-0-caret 0.75s linear 1s infinite forwards;
+}
+@-webkit-keyframes typed-0 {
+  0%, 0.8625578584% {
+    content: "​T";
+    content: "​T"/"To do list ";
+    alt: "To do list ";
+  }
+  0.8635578584%, 1.7261157168% {
+    content: "​To";
+    content: "​To"/"To do list ";
+    alt: "To do list ";
+  }
+  1.7271157168%, 2.5896735751% {
+    content: "​To ";
+    content: "​To "/"To do list ";
+    alt: "To do list ";
+  }
+  2.5906735751%, 3.4532314335% {
+    content: "​To d";
+    content: "​To d"/"To do list ";
+    alt: "To do list ";
+  }
+  3.4542314335%, 4.3167892919% {
+    content: "​To do";
+    content: "​To do"/"To do list ";
+    alt: "To do list ";
+  }
+  4.3177892919%, 5.1803471503% {
+    content: "​To do ";
+    content: "​To do "/"To do list ";
+    alt: "To do list ";
+  }
+  5.1813471503%, 6.0439050086% {
+    content: "​To do l";
+    content: "​To do l"/"To do list ";
+    alt: "To do list ";
+  }
+  6.0449050086%, 6.907462867% {
+    content: "​To do li";
+    content: "​To do li"/"To do list ";
+    alt: "To do list ";
+  }
+  6.908462867%, 7.7710207254% {
+    content: "​To do lis";
+    content: "​To do lis"/"To do list ";
+    alt: "To do list ";
+  }
+  7.7720207254%, 8.6345785838% {
+    content: "​To do list";
+    content: "​To do list"/"To do list ";
+    alt: "To do list ";
+  }
+  8.6355785838%, 27.4601398964% {
+    content: "​To do list ";
+    content: "​To do list "/"To do list ";
+    alt: "To do list ";
+  }
+  27.4611398964%, 28.1509861831% {
+    content: "​To do list";
+    content: "​To do list"/"To do list ";
+    alt: "To do list ";
+  }
+  28.1519861831%, 28.8418324698% {
+    content: "​To do lis";
+    content: "​To do lis"/"To do list ";
+    alt: "To do list ";
+  }
+  28.8428324698%, 29.5326787565% {
+    content: "​To do li";
+    content: "​To do li"/"To do list ";
+    alt: "To do list ";
+  }
+  29.5336787565%, 30.2235250432% {
+    content: "​To do l";
+    content: "​To do l"/"To do list ";
+    alt: "To do list ";
+  }
+  30.2245250432%, 30.9143713299% {
+    content: "​To do ";
+    content: "​To do "/"To do list ";
+    alt: "To do list ";
+  }
+  30.9153713299%, 31.6052176166% {
+    content: "​To do";
+    content: "​To do"/"To do list ";
+    alt: "To do list ";
+  }
+  31.6062176166%, 32.2960639033% {
+    content: "​To d";
+    content: "​To d"/"To do list ";
+    alt: "To do list ";
+  }
+  32.2970639033%, 32.98691019% {
+    content: "​To ";
+    content: "​To "/"To do list ";
+    alt: "To do list ";
+  }
+  32.98791019%, 33.6777564767% {
+    content: "​To";
+    content: "​To"/"To do list ";
+    alt: "To do list ";
+  }
+  33.6787564767%, 34.3686027634% {
+    content: "​T";
+    content: "​T"/"To do list ";
+    alt: "To do list ";
+  }
+  34.3696027634%, 43.0041813472% {
+    content: "​";
+    content: "​"/"To do list ";
+    alt: "To do list ";
+  }
+  43.0051813472%, 43.8677392055% {
+    content: "​F";
+    content: "​F"/"To do list ";
+    alt: "To do list ";
+  }
+  43.8687392055%, 44.7312970639% {
+    content: "​Fo";
+    content: "​Fo"/"To do list ";
+    alt: "To do list ";
+  }
+  44.7322970639%, 45.5948549223% {
+    content: "​For";
+    content: "​For"/"To do list ";
+    alt: "To do list ";
+  }
+  45.5958549223%, 46.4584127807% {
+    content: "​For ";
+    content: "​For "/"To do list ";
+    alt: "To do list ";
+  }
+  46.4594127807%, 47.321970639% {
+    content: "​For a";
+    content: "​For a"/"To do list ";
+    alt: "To do list ";
+  }
+  47.322970639%, 48.1855284974% {
+    content: "​For a ";
+    content: "​For a "/"To do list ";
+    alt: "To do list ";
+  }
+  48.1865284974%, 49.0490863558% {
+    content: "​For a P";
+    content: "​For a P"/"To do list ";
+    alt: "To do list ";
+  }
+  49.0500863558%, 49.9126442142% {
+    content: "​For a Pr";
+    content: "​For a Pr"/"To do list ";
+    alt: "To do list ";
+  }
+  49.9136442142%, 50.7762020725% {
+    content: "​For a Pro";
+    content: "​For a Pro"/"To do list ";
+    alt: "To do list ";
+  }
+  50.7772020725%, 51.6397599309% {
+    content: "​For a Prod";
+    content: "​For a Prod"/"To do list ";
+    alt: "To do list ";
+  }
+  51.6407599309%, 52.5033177893% {
+    content: "​For a Produ";
+    content: "​For a Produ"/"To do list ";
+    alt: "To do list ";
+  }
+  52.5043177893%, 53.3668756477% {
+    content: "​For a Produc";
+    content: "​For a Produc"/"To do list ";
+    alt: "To do list ";
+  }
+  53.3678756477%, 54.230433506% {
+    content: "​For a Product";
+    content: "​For a Product"/"To do list ";
+    alt: "To do list ";
+  }
+  54.231433506%, 55.0939913644% {
+    content: "​For a Producti";
+    content: "​For a Producti"/"To do list ";
+    alt: "To do list ";
+  }
+  55.0949913644%, 55.9575492228% {
+    content: "​For a Productiv";
+    content: "​For a Productiv"/"To do list ";
+    alt: "To do list ";
+  }
+  55.9585492228%, 56.8211070812% {
+    content: "​For a Productive";
+    content: "​For a Productive"/"To do list ";
+    alt: "To do list ";
+  }
+  56.8221070812%, 57.6846649396% {
+    content: "​For a Productive ";
+    content: "​For a Productive "/"To do list ";
+    alt: "To do list ";
+  }
+  57.6856649396%, 58.5482227979% {
+    content: "​For a Productive D";
+    content: "​For a Productive D"/"To do list ";
+    alt: "To do list ";
+  }
+  58.5492227979%, 59.4117806563% {
+    content: "​For a Productive Da";
+    content: "​For a Productive Da"/"To do list ";
+    alt: "To do list ";
+  }
+  59.4127806563%, 78.2373419689% {
+    content: "​For a Productive Day";
+    content: "​For a Productive Day"/"To do list ";
+    alt: "To do list ";
+  }
+  78.2383419689%, 78.9281882556% {
+    content: "​For a Productive Da";
+    content: "​For a Productive Da"/"To do list ";
+    alt: "To do list ";
+  }
+  78.9291882556%, 79.6190345423% {
+    content: "​For a Productive D";
+    content: "​For a Productive D"/"To do list ";
+    alt: "To do list ";
+  }
+  79.6200345423%, 80.309880829% {
+    content: "​For a Productive ";
+    content: "​For a Productive "/"To do list ";
+    alt: "To do list ";
+  }
+  80.310880829%, 81.0007271157% {
+    content: "​For a Productive";
+    content: "​For a Productive"/"To do list ";
+    alt: "To do list ";
+  }
+  81.0017271157%, 81.6915734024% {
+    content: "​For a Productiv";
+    content: "​For a Productiv"/"To do list ";
+    alt: "To do list ";
+  }
+  81.6925734024%, 82.3824196891% {
+    content: "​For a Producti";
+    content: "​For a Producti"/"To do list ";
+    alt: "To do list ";
+  }
+  82.3834196891%, 83.0732659758% {
+    content: "​For a Product";
+    content: "​For a Product"/"To do list ";
+    alt: "To do list ";
+  }
+  83.0742659758%, 83.7641122625% {
+    content: "​For a Produc";
+    content: "​For a Produc"/"To do list ";
+    alt: "To do list ";
+  }
+  83.7651122625%, 84.4549585492% {
+    content: "​For a Produ";
+    content: "​For a Produ"/"To do list ";
+    alt: "To do list ";
+  }
+  84.4559585492%, 85.1458048359% {
+    content: "​For a Prod";
+    content: "​For a Prod"/"To do list ";
+    alt: "To do list ";
+  }
+  85.1468048359%, 85.8366511226% {
+    content: "​For a Pro";
+    content: "​For a Pro"/"To do list ";
+    alt: "To do list ";
+  }
+  85.8376511226%, 86.5274974093% {
+    content: "​For a Pr";
+    content: "​For a Pr"/"To do list ";
+    alt: "To do list ";
+  }
+  86.5284974093%, 87.218343696% {
+    content: "​For a P";
+    content: "​For a P"/"To do list ";
+    alt: "To do list ";
+  }
+  87.219343696%, 87.9091899827% {
+    content: "​For a ";
+    content: "​For a "/"To do list ";
+    alt: "To do list ";
+  }
+  87.9101899827%, 88.6000362694% {
+    content: "​For a";
+    content: "​For a"/"To do list ";
+    alt: "To do list ";
+  }
+  88.6010362694%, 89.2908825561% {
+    content: "​For ";
+    content: "​For "/"To do list ";
+    alt: "To do list ";
+  }
+  89.2918825561%, 89.9817288428% {
+    content: "​For";
+    content: "​For"/"To do list ";
+    alt: "To do list ";
+  }
+  89.9827288428%, 90.6725751295% {
+    content: "​Fo";
+    content: "​Fo"/"To do list ";
+    alt: "To do list ";
+  }
+  90.6735751295%, 91.3634214162% {
+    content: "​F";
+    content: "​F"/"To do list ";
+    alt: "To do list ";
+  }
+  91.3644214162%, 100% {
+    content: "​";
+    content: "​"/"To do list ";
+    alt: "To do list ";
+  }
+}
+@keyframes typed-0 {
+  0%, 0.8625578584% {
+    content: "​T";
+    content: "​T"/"To do list ";
+    alt: "To do list ";
+  }
+  0.8635578584%, 1.7261157168% {
+    content: "​To";
+    content: "​To"/"To do list ";
+    alt: "To do list ";
+  }
+  1.7271157168%, 2.5896735751% {
+    content: "​To ";
+    content: "​To "/"To do list ";
+    alt: "To do list ";
+  }
+  2.5906735751%, 3.4532314335% {
+    content: "​To d";
+    content: "​To d"/"To do list ";
+    alt: "To do list ";
+  }
+  3.4542314335%, 4.3167892919% {
+    content: "​To do";
+    content: "​To do"/"To do list ";
+    alt: "To do list ";
+  }
+  4.3177892919%, 5.1803471503% {
+    content: "​To do ";
+    content: "​To do "/"To do list ";
+    alt: "To do list ";
+  }
+  5.1813471503%, 6.0439050086% {
+    content: "​To do l";
+    content: "​To do l"/"To do list ";
+    alt: "To do list ";
+  }
+  6.0449050086%, 6.907462867% {
+    content: "​To do li";
+    content: "​To do li"/"To do list ";
+    alt: "To do list ";
+  }
+  6.908462867%, 7.7710207254% {
+    content: "​To do lis";
+    content: "​To do lis"/"To do list ";
+    alt: "To do list ";
+  }
+  7.7720207254%, 8.6345785838% {
+    content: "​To do list";
+    content: "​To do list"/"To do list ";
+    alt: "To do list ";
+  }
+  8.6355785838%, 27.4601398964% {
+    content: "​To do list ";
+    content: "​To do list "/"To do list ";
+    alt: "To do list ";
+  }
+  27.4611398964%, 28.1509861831% {
+    content: "​To do list";
+    content: "​To do list"/"To do list ";
+    alt: "To do list ";
+  }
+  28.1519861831%, 28.8418324698% {
+    content: "​To do lis";
+    content: "​To do lis"/"To do list ";
+    alt: "To do list ";
+  }
+  28.8428324698%, 29.5326787565% {
+    content: "​To do li";
+    content: "​To do li"/"To do list ";
+    alt: "To do list ";
+  }
+  29.5336787565%, 30.2235250432% {
+    content: "​To do l";
+    content: "​To do l"/"To do list ";
+    alt: "To do list ";
+  }
+  30.2245250432%, 30.9143713299% {
+    content: "​To do ";
+    content: "​To do "/"To do list ";
+    alt: "To do list ";
+  }
+  30.9153713299%, 31.6052176166% {
+    content: "​To do";
+    content: "​To do"/"To do list ";
+    alt: "To do list ";
+  }
+  31.6062176166%, 32.2960639033% {
+    content: "​To d";
+    content: "​To d"/"To do list ";
+    alt: "To do list ";
+  }
+  32.2970639033%, 32.98691019% {
+    content: "​To ";
+    content: "​To "/"To do list ";
+    alt: "To do list ";
+  }
+  32.98791019%, 33.6777564767% {
+    content: "​To";
+    content: "​To"/"To do list ";
+    alt: "To do list ";
+  }
+  33.6787564767%, 34.3686027634% {
+    content: "​T";
+    content: "​T"/"To do list ";
+    alt: "To do list ";
+  }
+  34.3696027634%, 43.0041813472% {
+    content: "​";
+    content: "​"/"To do list ";
+    alt: "To do list ";
+  }
+  43.0051813472%, 43.8677392055% {
+    content: "​F";
+    content: "​F"/"To do list ";
+    alt: "To do list ";
+  }
+  43.8687392055%, 44.7312970639% {
+    content: "​Fo";
+    content: "​Fo"/"To do list ";
+    alt: "To do list ";
+  }
+  44.7322970639%, 45.5948549223% {
+    content: "​For";
+    content: "​For"/"To do list ";
+    alt: "To do list ";
+  }
+  45.5958549223%, 46.4584127807% {
+    content: "​For ";
+    content: "​For "/"To do list ";
+    alt: "To do list ";
+  }
+  46.4594127807%, 47.321970639% {
+    content: "​For a";
+    content: "​For a"/"To do list ";
+    alt: "To do list ";
+  }
+  47.322970639%, 48.1855284974% {
+    content: "​For a ";
+    content: "​For a "/"To do list ";
+    alt: "To do list ";
+  }
+  48.1865284974%, 49.0490863558% {
+    content: "​For a P";
+    content: "​For a P"/"To do list ";
+    alt: "To do list ";
+  }
+  49.0500863558%, 49.9126442142% {
+    content: "​For a Pr";
+    content: "​For a Pr"/"To do list ";
+    alt: "To do list ";
+  }
+  49.9136442142%, 50.7762020725% {
+    content: "​For a Pro";
+    content: "​For a Pro"/"To do list ";
+    alt: "To do list ";
+  }
+  50.7772020725%, 51.6397599309% {
+    content: "​For a Prod";
+    content: "​For a Prod"/"To do list ";
+    alt: "To do list ";
+  }
+  51.6407599309%, 52.5033177893% {
+    content: "​For a Produ";
+    content: "​For a Produ"/"To do list ";
+    alt: "To do list ";
+  }
+  52.5043177893%, 53.3668756477% {
+    content: "​For a Produc";
+    content: "​For a Produc"/"To do list ";
+    alt: "To do list ";
+  }
+  53.3678756477%, 54.230433506% {
+    content: "​For a Product";
+    content: "​For a Product"/"To do list ";
+    alt: "To do list ";
+  }
+  54.231433506%, 55.0939913644% {
+    content: "​For a Producti";
+    content: "​For a Producti"/"To do list ";
+    alt: "To do list ";
+  }
+  55.0949913644%, 55.9575492228% {
+    content: "​For a Productiv";
+    content: "​For a Productiv"/"To do list ";
+    alt: "To do list ";
+  }
+  55.9585492228%, 56.8211070812% {
+    content: "​For a Productive";
+    content: "​For a Productive"/"To do list ";
+    alt: "To do list ";
+  }
+  56.8221070812%, 57.6846649396% {
+    content: "​For a Productive ";
+    content: "​For a Productive "/"To do list ";
+    alt: "To do list ";
+  }
+  57.6856649396%, 58.5482227979% {
+    content: "​For a Productive D";
+    content: "​For a Productive D"/"To do list ";
+    alt: "To do list ";
+  }
+  58.5492227979%, 59.4117806563% {
+    content: "​For a Productive Da";
+    content: "​For a Productive Da"/"To do list ";
+    alt: "To do list ";
+  }
+  59.4127806563%, 78.2373419689% {
+    content: "​For a Productive Day";
+    content: "​For a Productive Day"/"To do list ";
+    alt: "To do list ";
+  }
+  78.2383419689%, 78.9281882556% {
+    content: "​For a Productive Da";
+    content: "​For a Productive Da"/"To do list ";
+    alt: "To do list ";
+  }
+  78.9291882556%, 79.6190345423% {
+    content: "​For a Productive D";
+    content: "​For a Productive D"/"To do list ";
+    alt: "To do list ";
+  }
+  79.6200345423%, 80.309880829% {
+    content: "​For a Productive ";
+    content: "​For a Productive "/"To do list ";
+    alt: "To do list ";
+  }
+  80.310880829%, 81.0007271157% {
+    content: "​For a Productive";
+    content: "​For a Productive"/"To do list ";
+    alt: "To do list ";
+  }
+  81.0017271157%, 81.6915734024% {
+    content: "​For a Productiv";
+    content: "​For a Productiv"/"To do list ";
+    alt: "To do list ";
+  }
+  81.6925734024%, 82.3824196891% {
+    content: "​For a Producti";
+    content: "​For a Producti"/"To do list ";
+    alt: "To do list ";
+  }
+  82.3834196891%, 83.0732659758% {
+    content: "​For a Product";
+    content: "​For a Product"/"To do list ";
+    alt: "To do list ";
+  }
+  83.0742659758%, 83.7641122625% {
+    content: "​For a Produc";
+    content: "​For a Produc"/"To do list ";
+    alt: "To do list ";
+  }
+  83.7651122625%, 84.4549585492% {
+    content: "​For a Produ";
+    content: "​For a Produ"/"To do list ";
+    alt: "To do list ";
+  }
+  84.4559585492%, 85.1458048359% {
+    content: "​For a Prod";
+    content: "​For a Prod"/"To do list ";
+    alt: "To do list ";
+  }
+  85.1468048359%, 85.8366511226% {
+    content: "​For a Pro";
+    content: "​For a Pro"/"To do list ";
+    alt: "To do list ";
+  }
+  85.8376511226%, 86.5274974093% {
+    content: "​For a Pr";
+    content: "​For a Pr"/"To do list ";
+    alt: "To do list ";
+  }
+  86.5284974093%, 87.218343696% {
+    content: "​For a P";
+    content: "​For a P"/"To do list ";
+    alt: "To do list ";
+  }
+  87.219343696%, 87.9091899827% {
+    content: "​For a ";
+    content: "​For a "/"To do list ";
+    alt: "To do list ";
+  }
+  87.9101899827%, 88.6000362694% {
+    content: "​For a";
+    content: "​For a"/"To do list ";
+    alt: "To do list ";
+  }
+  88.6010362694%, 89.2908825561% {
+    content: "​For ";
+    content: "​For "/"To do list ";
+    alt: "To do list ";
+  }
+  89.2918825561%, 89.9817288428% {
+    content: "​For";
+    content: "​For"/"To do list ";
+    alt: "To do list ";
+  }
+  89.9827288428%, 90.6725751295% {
+    content: "​Fo";
+    content: "​Fo"/"To do list ";
+    alt: "To do list ";
+  }
+  90.6735751295%, 91.3634214162% {
+    content: "​F";
+    content: "​F"/"To do list ";
+    alt: "To do list ";
+  }
+  91.3644214162%, 100% {
+    content: "​";
+    content: "​"/"To do list ";
+    alt: "To do list ";
+  }
+}
+@-webkit-keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+@keyframes typed-0-caret {
+  75% {
+    border-color: transparent;
+  }
+}
+
+.input-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-span > input {
+  margin: 4vmin;
+}
+
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+input {
+  border-radius: 0.2rem;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+input[type=text] {
+  padding: 2vmin 7vmin 2vmin 1.8vmin;
+  border: 1px solid rgba(0, 0, 0, 0.077);
+  background-color: wheat;
+  outline: none;
+}
+
+input[type=text]:active {
+  outline: none;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.63);
+}
+
+input[input=text]:focus-visible {
+  outline: none;
+  border: none;
+  background-color: rgba(51, 51, 51, 0.39);
+}
+
+input[type=button] {
+  background-color: transparent;
+  padding: 2vmin 3vmin;
+}
+
+input[type=button]:active {
+  background-color: rgba(157, 157, 157, 0.133);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #333;
+    color: wheat;
+  }
+  input[type=button] {
+    color: wheat;
+    border: wheat 2px solid;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+input[type=button]:hover {
+  scale: 1.07;
+}
+
+#enter_symbol > line {
+  stroke: wheat;
+}
+
+#enter_symbol > path {
+  fill: wheat;
+}
+
+#enter_symbol {
+  display: inline-block;
+}
+
+dd {
+  padding: 2vmin 12vmin;
+  margin: 0.5vmin 2vmin;
+  text-align: center;
+}
+
+.btn-span > input, svg {
+  display: block;
+}
+
+.btn-span {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+dd {
+  width: 30vmin;
+  background-color: wheat;
+  color: #333;
+  border-radius: 0.2rem;
+  -webkit-animation: slide-down 1s ease;
+          animation: slide-down 1s ease;
+  transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    translate: 0;
+  }
+  50% {
+    translate: 0 20%;
+  }
+  100% {
+    translate: 0;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    translate: 0;
+  }
+  50% {
+    translate: 0 20%;
+  }
+  100% {
+    translate: 0;
+  }
+}
+.dd_anim {
+  -webkit-animation: slide-down 1s ease;
+          animation: slide-down 1s ease;
+  transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+footer {
+  position: relative;
+  padding-bottom: 2rem;
+  display: block;
+  width: 100vw;
+  text-align: center;
+}/*# sourceMappingURL=main.css.map */
