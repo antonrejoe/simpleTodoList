@@ -10,6 +10,7 @@ body {
   flex-direction: column;
   text-align: center;
   overflow-x: hidden;
+  background: #C19A6B;
 }
 
 body > h1::before {
@@ -136,7 +137,7 @@ body > h1::after {
     content: "​T";
     content: "​T"/"To do list ";
     alt: "To do list ";
-  }
+  }. 
   34.3696027634%, 43.0041813472% {
     content: "​";
     content: "​"/"To do list ";
